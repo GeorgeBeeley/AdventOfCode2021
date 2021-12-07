@@ -1,0 +1,15 @@
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\bin\Debug\net6.0\01-Sonar_Sweep.exe
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\bin\Debug\net6.0\01-Sonar_Sweep.deps.json
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\bin\Debug\net6.0\01-Sonar_Sweep.runtimeconfig.json
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\bin\Debug\net6.0\01-Sonar_Sweep.dll
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\bin\Debug\net6.0\ref\01-Sonar_Sweep.dll
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\bin\Debug\net6.0\01-Sonar_Sweep.pdb
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\obj\Debug\net6.0\01-Sonar_Sweep.csproj.AssemblyReference.cache
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\obj\Debug\net6.0\01-Sonar_Sweep.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\obj\Debug\net6.0\01-Sonar_Sweep.AssemblyInfoInputs.cache
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\obj\Debug\net6.0\01-Sonar_Sweep.AssemblyInfo.cs
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\obj\Debug\net6.0\01-Sonar_Sweep.csproj.CoreCompileInputs.cache
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\obj\Debug\net6.0\01-Sonar_Sweep.dll
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\obj\Debug\net6.0\ref\01-Sonar_Sweep.dll
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\obj\Debug\net6.0\01-Sonar_Sweep.pdb
+C:\Users\GeorgeB\source\repos\AdventOfCode\01-Sonar_Sweep\obj\Debug\net6.0\01-Sonar_Sweep.genruntimeconfig.cache
