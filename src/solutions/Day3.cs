@@ -40,26 +40,15 @@ namespace AdventOfCode2021
         }
       }
 
-      var oxygenGeneratorRating = GetLifeSupportRating(input, ones, zeros, binaryLength, "OxygenGeneratorRating");
-      var co2ScrubberRating = GetLifeSupportRating(input, ones, zeros, binaryLength, "Co2ScrubberRating");
-
-      if (oxygenGeneratorRating == "Provide rating type".ToCharArray() || co2ScrubberRating == "Provide rating type".ToCharArray())
-        return 0;
+      var oxygenGeneratorRating = GetLifeSupportRating(input, ones, zeros, binaryLength, new char[] { '0', '0', '1' });
+      var co2ScrubberRating = GetLifeSupportRating(input, ones, zeros, binaryLength, new char[] { '1', '1', '0' });
 
       // return $"{new string(oxygenGeneratorRating)} {new string(co2ScrubberRating)}";
       return Convert.ToInt32(new string(oxygenGeneratorRating), 2) * Convert.ToInt32(new string(co2ScrubberRating), 2);
     }
 
-    char[] GetLifeSupportRating(IEnumerable<string> input, int[] ones, int[] zeros, int binaryLength, string ratingType)
+    char[] GetLifeSupportRating(IEnumerable<string> input, int[] ones, int[] zeros, int binaryLength, char[] key)
     {
-      var key = (ratingType == "OxygenGeneratorRating")
-        ? new char[] { '0', '0', '1' }
-        : (ratingType == "Co2ScrubberRating")
-        ? new char[] { '1', '1', '0' }
-        : "Provide rating type".ToCharArray();
-
-      if (key == "Provide rating type".ToCharArray())
-        return key;
 
       var rating = new List<char[]>();
       foreach (string str in input)
