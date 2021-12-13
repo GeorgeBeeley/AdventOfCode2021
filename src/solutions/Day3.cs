@@ -2,7 +2,7 @@ namespace AdventOfCode2021
 {
   class Day3
   {
-    public Day3() {}
+    public Day3() { }
 
     public int SolveProblemA(IEnumerable<string> input)
     {
@@ -31,24 +31,57 @@ namespace AdventOfCode2021
       int[] ones = new int[binaryLength];
       int[] zeros = new int[binaryLength];
 
-      char[] gammaChars = new char[binaryLength];
-      char[] epsilonChars = new char[binaryLength];
-
       for (int i = 0; i < binaryLength; i++)
       {
         foreach (string line in input)
         {
-          if (line.ElementAt(i) == '1')
-            ones[i]++;
-          if (line.ElementAt(i) == '0')
-            zeros[i]++;
+          if (line.ElementAt(i) == '1') ones[i]++;
+          if (line.ElementAt(i) == '0') zeros[i]++;
         }
-
-        gammaChars[i] = (ones[i] > zeros[i]) ? '1' : '0';
-        epsilonChars[i] = (ones[i] > zeros[i]) ? '0' : '1';
       }
 
-      return Convert.ToInt32(new string(gammaChars), 2) * Convert.ToInt32(new string(epsilonChars), 2);
+      var oxygenGeneratorRating = GetLifeSupportRating(input, ones, zeros, binaryLength, "OxygenGeneratorRating");
+      var co2ScrubberRating = GetLifeSupportRating(input, ones, zeros, binaryLength, "Co2ScrubberRating");
+
+      if (oxygenGeneratorRating == "Provide rating type".ToCharArray() || co2ScrubberRating == "Provide rating type".ToCharArray())
+        return 0;
+
+      // return $"{new string(oxygenGeneratorRating)} {new string(co2ScrubberRating)}";
+      return Convert.ToInt32(new string(oxygenGeneratorRating), 2) * Convert.ToInt32(new string(co2ScrubberRating), 2);
+    }
+
+    char[] GetLifeSupportRating(IEnumerable<string> input, int[] ones, int[] zeros, int binaryLength, string ratingType)
+    {
+      var key = (ratingType == "OxygenGeneratorRating")
+        ? new char[] { '0', '0', '1' }
+        : (ratingType == "Co2ScrubberRating")
+        ? new char[] { '1', '1', '0' }
+        : "Provide rating type".ToCharArray();
+
+      if (key == "Provide rating type".ToCharArray())
+        return key;
+
+      var rating = new List<char[]>();
+      foreach (string str in input)
+        rating.Add(str.ToCharArray());
+
+      var lateralPos = 0;
+      while (rating.Count() > 1)
+      {
+        if (lateralPos == binaryLength)
+          lateralPos = 0;
+
+        for (int i = rating.Count() - 1; i >= 0; i--)
+        {
+          if (ones[lateralPos] == zeros[lateralPos] && rating[i][lateralPos] == key[0]) rating.RemoveAt(i);
+          if (ones[lateralPos] > zeros[lateralPos] && rating[i][lateralPos] == key[1]) rating.RemoveAt(i);
+          if (ones[lateralPos] < zeros[lateralPos] && rating[i][lateralPos] == key[2]) rating.RemoveAt(i);
+        }
+
+        lateralPos++;
+      }
+
+      return rating[0];
     }
   }
 }

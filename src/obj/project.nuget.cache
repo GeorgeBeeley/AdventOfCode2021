@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BAbNpvbK33/6NfbedZ9V8rAmTykskVZIgAp1rCePEOo5AuQQnlq0dzoYYEUIIK+dN3iAWG40OAJbsTIevMglEw==",
+  "dgSpecHash": "V8V9W8+t1W++m3MDsnvZ4zd2WxUuKV4/Q65M+obDDSoKA1QluI66kB8bE6ilwLqWWvfCY4CEv9+PNG/haoMcMQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\src\\01-Sonar_Sweep.csproj",
+  "projectFilePath": "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\src\\Advent_Of_Code_2021.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\src\\01-Sonar_Sweep.csproj",
-      "projectName": "01-Sonar_Sweep",
-      "projectPath": "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\src\\01-Sonar_Sweep.csproj",
+      "projectUniqueName": "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\src\\Advent_Of_Code_2021.csproj",
+      "projectName": "Advent_Of_Code_2021",
+      "projectPath": "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\src\\Advent_Of_Code_2021.csproj",
       "packagesPath": "C:\\Users\\GeorgeB\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\src\\obj\\",
       "projectStyle": "PackageReference",
