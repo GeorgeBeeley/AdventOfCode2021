@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\01-Sonar_Sweep\\01-Sonar_Sweep.csproj": {}
+    "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\src\\01-Sonar_Sweep.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\01-Sonar_Sweep\\01-Sonar_Sweep.csproj": {
+    "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\src\\01-Sonar_Sweep.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\01-Sonar_Sweep\\01-Sonar_Sweep.csproj",
+        "projectUniqueName": "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\src\\01-Sonar_Sweep.csproj",
         "projectName": "01-Sonar_Sweep",
-        "projectPath": "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\01-Sonar_Sweep\\01-Sonar_Sweep.csproj",
+        "projectPath": "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\src\\01-Sonar_Sweep.csproj",
         "packagesPath": "C:\\Users\\GeorgeB\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\01-Sonar_Sweep\\obj\\",
+        "outputPath": "C:\\Users\\GeorgeB\\source\\repos\\AdventOfCode\\src\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\GeorgeB\\AppData\\Roaming\\NuGet\\NuGet.Config",
