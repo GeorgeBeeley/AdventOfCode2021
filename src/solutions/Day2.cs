@@ -5,9 +5,8 @@ namespace AdventOfCode2021 {
 
     public int SolveProblem(IEnumerable<string> input)
     {
-      int horizontalPos = 0;
-      int depth = 0;
-      int aim = 0;
+      int horizontalPos = 0, depth = 0, aim = 0;
+      
       foreach (string line in input)
       {
         var data = line.Split(" ");
@@ -32,9 +31,6 @@ namespace AdventOfCode2021 {
         }
       }
 
-      // Console.WriteLine("HorizontalPos: " + horizontalPos);
-      // Console.WriteLine("Depth: " + depth);
-      // Console.WriteLine("Multiplied Value: " + (depth * horizontalPos));
       return (depth * horizontalPos);
     }
   }
